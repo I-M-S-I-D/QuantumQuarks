@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-image: url("https://img.freepik.com/free-photo/plain-smooth-green-paper-background_53876-102688.jpg?w=740&t=st=1699937668~exp=1699938268~hmac=03843dce9480a587eda3cd7b635472074166bbcdf8b63eb09c7b264eafb4fc75");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #logo {
+      max-width: 150px;
+      max-height: 100px;
+      margin-bottom: 20px;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 50%;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input,
+    select,
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      border: 1px solid #ddd;
+    }
+
+    button {
+      background-color: #007BFF;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+  <title>FundUp</title>
+</head>
+
+<body>
+  <img id="logo" src="https://looka.com/s/158330821" alt="Company Logo">
+
+  <hr>
+
+  <form action="file:///E:/Hackathon/Button%20vc%20and/Dump/option.html" method="post">
+    <label for="username">Username/Email:</label>
+    <input type="text" id="username" name="username" required><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br><br>
+
+    <button >Log In</button><br><br><br></form>
+
+    <script>
+      const usernameInput = document.getElementById('username');
+      const passwordInput = document.getElementById('password');
+
+      const submitButton = document.querySelector('button[type="submit"]');
+
+      submitButton.addEventListener('click', (event) => {
+        event.preventDefault();
+
+        const username = usernameInput.value;
+        const password = passwordInput.value;
+
+        localStorage.setItem('username', username);
+        localStorage.setItem('password', password);
+
+        // Submit the form to the server (if desired)
+        // form.submit();
+      });
+    </script>
+  
+
+  <form action="file:///E:/Hackathon/Button%20vc%20and/Dump/SignUp_2nd_draft.html" method="post">
+    <p> Not Registered ? <button>Sign Up</button></p></form>
+
+    <script>
+      const signUpButton = document.querySelector('button');

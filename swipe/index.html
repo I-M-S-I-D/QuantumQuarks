@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Tinder swipe cards</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+<style>
+  body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-image: url("https://img.freepik.com/free-photo/plain-smooth-green-paper-background_53876-102688.jpg?w=740&t=st=1699937668~exp=1699938268~hmac=03843dce9480a587eda3cd7b635472074166bbcdf8b63eb09c7b264eafb4fc75"); 
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+  }
+
+  #logo {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 150px; 
+      max-height: 150px; 
+  }
+</style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="tinder">
+  <div class="tinder--status">
+    <i class="fa fa-remove"></i>
+    <i class="fa fa-handshake-o"></i>
+  </div>
+
+  <div class="tinder--cards">
+    <div class="tinder--card">
+      <img src="https://placeimg.com/600/300/people">
+      <h3>Helios</h3>
+      <p>   Empowering Vision, Enabling Safety      </p>
+    </div>
+    <div class="tinder--card">
+      <img src="https://placeimg.com/600/300/animals">
+      <h3>Swanx</h3>
+      <p>This is a demo for Tinder like swipe cards</p>
+    </div>
+    <div class="tinder--card">
+      <img src="https://placeimg.com/600/300/nature">
+      <h3>Trackademic</h3>
+      <p>Shape Careers, Secure Histories</p>
+    </div>
+    <div class="tinder--card">
+      <img src="https://placeimg.com/600/300/tech">
+      <h3>Dinego</h3>
+      <p>Reserve Elegance, Dine with Ease</p>
+    </div>
+    <div class="tinder--card">
+      <img src="https://placeimg.com/600/300/arch">
+      <h3>We Go</h3>
+      <p> Explore. Discover. Journey.</p>
+    </div>
+  </div>
+
+  <div class="tinder--buttons">
+    <button id="nope"><i class="fa fa-remove"></i></button>
+    <button id="love"><i class="fa fa-handshake-o"></i></button>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://hammerjs.github.io/dist/hammer.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
